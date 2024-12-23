@@ -1,7 +1,9 @@
-﻿using CommonServices;
+﻿using AdventOfCode.Days;
+using AdventOfCode.Days.Day1;
+using AdventOfCode.Days.Day2;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Day1;
+namespace AdventOfCode;
 
 public class Program
 {
@@ -17,8 +19,10 @@ public class Program
     
     private static void ConfigureServices(IServiceCollection services)
     {
-        services.AddCommonServices();
-            
+        services.AddServices();
+        
+        services.AddTransient<IDay1, Day1>();
+        services.AddTransient<IDay2, Day2>();
         services.AddTransient<App>();
     }
 }

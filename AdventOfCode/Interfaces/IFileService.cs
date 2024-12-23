@@ -1,4 +1,4 @@
-namespace CommonServices;
+namespace AdventOfCode.Interfaces;
 
 public interface IFileService
 {

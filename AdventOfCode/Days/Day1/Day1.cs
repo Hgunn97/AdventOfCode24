@@ -1,18 +1,18 @@
-using CommonServices;
+using AdventOfCode.Interfaces;
 
-namespace Day1;
+namespace AdventOfCode.Days.Day1;
 
-public class App(IFileService fileService)
+public class Day1(IFileService fileService): IDay1
 {
-    public void Run()
+    public void ExecuteDay1()
     {
-        var puzzleInput = fileService.ReadLines("./puzzleInput.txt");
+        var puzzleInput = fileService.ReadLines("./Days/Day1/puzzleInputDay1.txt");
         var input = GeneratePuzzleInputLists(puzzleInput);
         
         Console.WriteLine(PartOne(input));
         Console.WriteLine(PartTwo(input));
     }
-
+    
     private Dictionary<string, List<int>> GeneratePuzzleInputLists(IEnumerable<string> puzzleInput)
     {
         var dictionary = new Dictionary<string, List<int>>

@@ -1,10 +1,12 @@
+using AdventOfCode.Interfaces;
+using AdventOfCode.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CommonServices;
+namespace AdventOfCode;
 
 public static class ServiceCollectionExtension
 {
-    public static void AddCommonServices(this IServiceCollection services)
+    public static void AddServices(this IServiceCollection services)
     {
         services.AddTransient<IFileService, FileService>();
     }
