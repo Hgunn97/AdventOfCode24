@@ -8,4 +8,9 @@ public class FileService: IFileService
     {
         return File.ReadLines(path);
     }
+
+    public string ReadText(string path)
+    {
+        return File.ReadAllText(path);
+    }
 }

@@ -20,6 +20,12 @@
       <None Update="Days\Day2\puzzleInputDay2.txt">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
+      <None Update="Days\Day3\exampleInputDay3.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="Days\Day3\puzzleInputDay3.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
     
     <ItemGroup>

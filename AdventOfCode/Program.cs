@@ -1,6 +1,7 @@
 ﻿using AdventOfCode.Days;
 using AdventOfCode.Days.Day1;
 using AdventOfCode.Days.Day2;
+using AdventOfCode.Days.Day3;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AdventOfCode;
@@ -23,6 +24,7 @@ public class Program
         
         services.AddTransient<IDay1, Day1>();
         services.AddTransient<IDay2, Day2>();
+        services.AddTransient<IDay3, Day3>();
         services.AddTransient<App>();
     }
 }
